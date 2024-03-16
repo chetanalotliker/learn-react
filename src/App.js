@@ -1,12 +1,18 @@
+import React from 'react';
 import './App.css';
 import Btn from './Btn';
 import Btn2 from './Btn2';
 import BtnNumber from './BtnNumber';
+import Heading from './Heading';
 import InputComponent from './InputComponent';
 import ModeToggler from './ModeToggler';
 import RegisterForm from './RegisterForm';
 
 function App() {
+  const [word, setWord] = React.useState('topics')
+  function handleClick() {
+    setWord('Mock Data')
+  }
   return (
     <>
       <h2>Events</h2>
@@ -26,6 +32,8 @@ function App() {
       <h2>Form in React js</h2>
       <br />
       <RegisterForm />
+      <Heading message={word + ''} />
+      <button onClick={handleClick}>Click here</button>
     </>
   );
 }
