@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Btn from './Btn';
+import Btn2 from './Btn2';
+import BtnNumber from './BtnNumber';
+import ModeToggler from './ModeToggler';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h2>Events</h2>
+      <Btn />
+      <br /> <br />
+      <Btn2 />
+      <br />
+      <ModeToggler />
+      <br />
+      <h2>Guess the Number Game</h2>
+      <BtnNumber />
+    </>
   );
 }
 
