@@ -7,6 +7,7 @@ import Heading from './Heading';
 import InputComponent from './InputComponent';
 import ModeToggler from './ModeToggler';
 import RegisterForm from './RegisterForm';
+import AssetLoad from './AssetLoad';
 
 function App() {
   const [word, setWord] = React.useState('topics')
@@ -34,6 +35,10 @@ function App() {
       <RegisterForm />
       <Heading message={word + ''} />
       <button onClick={handleClick}>Click here</button>
+      <br />
+      <h2>Image</h2>
+      <br />
+      <AssetLoad />
     </>
   );
 }
